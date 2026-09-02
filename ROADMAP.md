@@ -1,5 +1,11 @@
 # Master Roadmap
 
+Detailed execution instructions are intentionally **not** stored here.
+The currently authorized phase is supplied through a local disposable
+`_NEXT_PHASE/` packet. This file freezes only the public phase order and gates.
+
+A roadmap entry is a target, not evidence.
+
 ```text
 TRACK A — make it work
 ```

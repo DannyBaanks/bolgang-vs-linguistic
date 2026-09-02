@@ -1,0 +1,37 @@
+# P00 — commands.txt
+# The oracle and Classic interpreters are external local checkouts. Exact
+# provenance is carried by their commit SHAs and SHA-256 hashes below; local
+# absolute paths are intentionally not published. Placeholders use <LOCAL>.
+#
+# <ORACLE>  = local checkout of github-linguist/linguist
+# <ORACLE2> = local checkout of the malbolge-linguist bundle containing <ORACLE>
+# <INTERP1> = malbolge-oracle checkout (oracle.py)
+# <INTERP2> = gost checkout (gost.c / gost.exe)
+
+# 1. One-time bootstrap cleanup (from disposable _NEXT_PHASE packet)
+powershell -ExecutionPolicy Bypass -File .\_NEXT_PHASE\APPLY_CORRECTIONS.ps1
+
+# 2. Local discovery of Linguist oracle and Classic Malbolge interpreters
+powershell -ExecutionPolicy Bypass -File .\_NEXT_PHASE\P00_DISCOVER.ps1
+# NOTE: full recursive discovery exceeded 120s; targeted discovery was used.
+
+# 3. Confirm Linguist oracle revision
+git -C "<ORACLE2>\upstream" remote -v
+git -C "<ORACLE2>\upstream" rev-parse HEAD
+git -C "<ORACLE2>\upstream" status --porcelain
+git -C "<ORACLE2>\upstream" rev-parse origin/main
+
+# 4. Hash the frozen artifacts
+Get-FileHash -Algorithm SHA256 -LiteralPath "<INTERP1>\oracle.py"
+Get-FileHash -Algorithm SHA256 -LiteralPath "<INTERP2>\gost.c"
+Get-FileHash -Algorithm SHA256 -LiteralPath "<INTERP2>\gost.exe"
+Get-FileHash -Algorithm SHA256 -LiteralPath "<ORACLE2>\upstream\samples\Malbolge\truth_machine.malbolge"
+
+# 5. Known-vector run on gost (interpreter #2, standalone CLI)
+#    gost <file.mal> <max_steps>  ; stdin piped; program stdout captured
+"0" | & "<INTERP2>\gost.exe" "<ORACLE2>\upstream\samples\Malbolge\truth_machine.malbolge" 1000000
+#    STDOUT: 0 ; stderr: steps=136 output=1 terminated=yes ; exit 0
+
+# 6. Known-vector run on oracle (interpreter #1, Python reference API)
+#    (driver via: py -  <<EOF ... oracle.Oracle(); load_bytes; provide_input("0"); run())
+#    steps=136 halted=True halt_reason=halt_opcode output='0'

@@ -1,0 +1,3 @@
+﻿GOST STDERR (metadata):
+steps=136 output=1 terminated=yes
+

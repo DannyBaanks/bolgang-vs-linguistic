@@ -49,4 +49,4 @@ claim scope <= evidence scope
 
 Stop at the first `NOT_DEMONSTRATED`.
 
-Read `AGENT_START_HERE.md`.
+Read `AGENT_START_HERE.md`. Detailed phase instructions are supplied locally and are not part of the public repository.

@@ -1,0 +1,45 @@
+{
+  "phase": "P00",
+  "path_note": "Absolute local paths redacted for public scope; identity carried by hashes/commits. Placeholders: <INTERP1>=malbolge-oracle, <INTERP2>=gost, <ORACLE2>=malbolge-linguist bundle.",
+  "artifacts": {
+    "linguist_oracle_pristine_upstream_main": {
+      "commit": "d5214e1612c858ba14bf98edeca57e1683276f1d"
+    },
+    "linguist_oracle_working_head": {
+      "commit": "b88d632053392ec83fdb00cdc2a39ac3cabb301c",
+      "parent": "d5214e1612c858ba14bf98edeca57e1683276f1d"
+    },
+    "oracle_py": {
+      "path": "<INTERP1>/oracle.py",
+      "sha256": "e7e71a24a7560aed944f178784567fda29afb228fcd91a41e8ed41c13430bf8d"
+    },
+    "gost_c": {
+      "path": "<INTERP2>/gost.c",
+      "sha256": "acbe79047d797dad4e9dcacb97399ee3ad24cb2bae8b7e11d51ce110b4d09588"
+    },
+    "gost_exe": {
+      "path": "<INTERP2>/gost.exe",
+      "sha256": "35bfd2572e958bda9a052f76c5abd42995a50a90788ad1cc085e775bb93d05c4"
+    },
+    "truth_machine_malbolge": {
+      "path": "upstream/samples/Malbolge/truth_machine.malbolge",
+      "sha256": "7062713e96dae33f5672fc4dcd654d5657e3c0ab44fd03bd93ebdd3ec43feb82"
+    }
+  },
+  "known_vector_results": {
+    "oracle": {
+      "input": "0",
+      "steps": 136,
+      "halted": true,
+      "halt_reason": "halt_opcode",
+      "output": "0"
+    },
+    "gost": {
+      "input": "0",
+      "exit": 0,
+      "stdout": "0",
+      "stderr_meta": "steps=136 output=1 terminated=yes"
+    },
+    "agreement": "136 steps, output '0' on both independent interpreters"
+  }
+}

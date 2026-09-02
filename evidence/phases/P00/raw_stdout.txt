@@ -1,0 +1,9 @@
+﻿GOST STDOUT:
+0
+
+ORACLE STDOUT (metadata report):
+ORACLE RUN:
+steps=136
+halted=True
+halt_reason=halt_opcode
+output='0'

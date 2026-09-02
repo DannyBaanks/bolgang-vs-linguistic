@@ -2,10 +2,6 @@
 
 You are implementing **BOLGANG VS LINGUISTIC**.
 
-Do not begin by rewriting Linguist.
-Do not begin by porting Ruby.
-Do not assume an anchor design works.
-
 ## First commandment
 
 ```text
@@ -19,48 +15,73 @@ or independent reproduction:
 NOT_DEMONSTRATED
 ```
 
-## Work order
+## Permanent project contracts
 
-1. Read:
-   - `CLAIM_FIREWALL.md`
-   - `ROADMAP.md`
-   - `architecture/EXECUTION_MODEL.md`
-   - `evidence/EVIDENCE_CONTRACT.md`
-2. Run `scripts/discover_local_inputs.ps1`.
-3. Freeze exact local provenance for:
-   - the GitHub Linguist source/checkout used as oracle
-   - Classic Malbolge interpreter(s)
-4. Execute **PHASE 00 ONLY**.
-5. Write its result under `evidence/phases/P00/`.
-6. If P00 passes, continue to P01.
-7. Stop at the first failed gate or `NOT_DEMONSTRATED`.
-8. Never silently weaken a gate.
-9. Implementation methodology is OUT_OF_PUBLIC_SCOPE.
+Read:
+
+1. `PROJECT_STATUS.md`
+2. `CLAIM_FIREWALL.md`
+3. `ROADMAP.md`
+4. `architecture/EXECUTION_MODEL.md`
+5. `evidence/EVIDENCE_CONTRACT.md`
+
+These files are persistent project state.
+
+## Disposable phase packet
+
+The detailed instructions for the **one currently authorized phase** live in:
+
+```text
+_NEXT_PHASE/NEXT.md
+```
+
+`_NEXT_PHASE/` is local-only, ignored by Git, disposable, and MUST NOT become
+part of public project history.
+
+If `_NEXT_PHASE/NEXT.md` does not exist:
+
+```text
+NO_AUTHORIZED_NEXT_PHASE
+```
+
+STOP. Do not infer a phase from the roadmap and do not invent work.
+
+If it exists:
+
+1. read every file named by `_NEXT_PHASE/NEXT.md`;
+2. execute exactly that phase;
+3. obey all permanent claim/evidence contracts;
+4. stop at the first failed gate or `NOT_DEMONSTRATED`;
+5. write permanent evidence under `evidence/phases/<PHASE>/`;
+6. update `PROJECT_STATUS.md`;
+7. regenerate `ROADMAP_SHA256.json`;
+8. delete `_NEXT_PHASE/`;
+9. show the final diff/status;
+10. commit only the permanent project changes;
+11. STOP.
+
+## Phase discipline
+
+A commit name is not evidence.
+
+A phase is demonstrated only when its gate has reproducible evidence in the
+repository.
+
+Never silently weaken a gate to make a phase pass.
 
 ## Git discipline
 
-One phase = one coherent commit after its gate is satisfied.
+One demonstrated phase = one coherent commit.
 
-Suggested messages:
+Do not commit:
+- `_NEXT_PHASE/`,
+- local discovery output,
+- caches/vendor junk,
+- generated gigabytes not required by the evidence contract.
 
-```text
-P00: freeze oracle and local provenance
-P01: capture canonical linguist behavior corpus
-P02: extract semantic process graph
-P03: demonstrate first classic malbolge primitive
-...
-```
+## Host boundary
 
-Do not commit generated gigabytes or vendor caches unless the evidence contract
-requires the exact artifact.
+The frozen central law remains in `CLAIM_FIREWALL.md`.
 
-## Required stop behavior
-
-When a requested phase passes:
-
-1. State `PHASE_X = DEMONSTRATED`.
-2. Give exact evidence paths/hashes.
-3. State the next phase.
-4. STOP.
-
-Do not automatically begin unrelated work.
+Implementation methodology that is not required to reproduce the public claim
+is OUT_OF_PUBLIC_SCOPE.

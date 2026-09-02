@@ -8,3 +8,7 @@ Thumbs.db
 *~
 .vscode/
 .idea/
+
+# Local disposable execution packet
+_NEXT_PHASE/
+OVERLAY_INFO.txt

@@ -1,0 +1,41 @@
+{
+  "phase": "P00",
+  "timestamp": "2026-09-02T23:15:00-06:00",
+  "os": "win32",
+  "python": "3.12.4",
+  "git": "available",
+  "bolgang_repo_commit": "ee05245024622010f5776ae388930786150e0070",
+  "path_note": "Absolute local paths are redacted for public scope; identity is carried by commit SHAs and SHA-256 hashes. Placeholders: <INTERP1>=malbolge-oracle, <INTERP2>=gost, <ORACLE2>=malbolge-linguist bundle.",
+  "oracle": {
+    "repo": "malbolge-oracle",
+    "path": "<INTERP1>",
+    "commit": "6cf2423f1827290b12fb46d60102a944f5793eba",
+    "working_tree": "dirty (README.md modified; does not alter oracle.py)",
+    "file": "oracle.py",
+    "sha256": "e7e71a24a7560aed944f178784567fda29afb228fcd91a41e8ed41c13430bf8d",
+    "semantics": "Classic 10-trit / 59049-cell, Iizawa 2005 Appendix C"
+  },
+  "gost": {
+    "repo": "gost",
+    "path": "<INTERP2>",
+    "commit": "a60adf1a8a4a679c89061274f5bd125f915beee9",
+    "working_tree": "clean",
+    "source": "gost.c",
+    "source_sha256": "acbe79047d797dad4e9dcacb97399ee3ad24cb2bae8b7e11d51ce110b4d09588",
+    "binary": "gost.exe",
+    "semantics": "Classic 10-trit / 59049-cell (MEM_SIZE 59049)"
+  },
+  "linguist_oracle": {
+    "remote": "https://github.com/github-linguist/linguist.git",
+    "path": "<ORACLE2>\\upstream",
+    "pristine_upstream_main": "d5214e1612c858ba14bf98edeca57e1683276f1d",
+    "working_head": "b88d632053392ec83fdb00cdc2a39ac3cabb301c",
+    "branch": "malbolge-patch-canonical",
+    "working_tree": "clean",
+    "note": "working HEAD = pristine upstream + one Malbolge patch commit whose parent is exactly the pristine commit"
+  },
+  "known_vector": {
+    "path": "upstream/samples/Malbolge/truth_machine.malbolge",
+    "sha256": "7062713e96dae33f5672fc4dcd654d5657e3c0ab44fd03bd93ebdd3ec43feb82"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "phase": "P00",
+  "observable_result_normalization": {
+    "encoding": "UTF-8",
+    "newline": "normalized to LF for comparison",
+    "key_ordering": "deterministic sorted key order when JSON is used",
+    "byte_output": "compared as exact byte sequences",
+    "presentation_only": true,
+    "non_semantic": true
+  }
+}
