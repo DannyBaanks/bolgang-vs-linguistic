@@ -1,0 +1,36 @@
+{
+  "phase": "P01",
+  "timestamp": "2026-09-02T23:59:00-06:00",
+  "project": {
+    "head_at_start": "867825a5055e123cca9cca0cb56e4329fccdd7a6",
+    "os": "win32",
+    "python": "3.12.4 (corpus builder only)"
+  },
+  "frozen_oracle": {
+    "remote": "https://github.com/github-linguist/linguist.git",
+    "pristine_upstream_main": "d5214e1612c858ba14bf98edeca57e1683276f1d",
+    "working_head": "b88d632053392ec83fdb00cdc2a39ac3cabb301c",
+    "working_branch": "malbolge-patch-canonical",
+    "working_tree_state": "clean",
+    "checkout_path_host": "<LINGUIST_COLD> (P00-frozen checkout; private on this workstation)",
+    "container_mount": "/work/patched"
+  },
+  "execution_env": {
+    "container_image": "malbolge-linguist-addgrammar:latest",
+    "ruby": "3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux-musl]",
+    "bundler": "2.6.9",
+    "docker_client": "29.5.3",
+    "docker_server": "27.5.1",
+    "git": "2.54.0"
+  },
+  "harness": {
+    "probe_script": "scripts/p01_probe.rb",
+    "corpus_builder": "scripts/p01_build_corpus.py",
+    "manifest": "evidence/phases/P01/corpus/manifest.json"
+  },
+  "notes": [
+    "Host absolute paths appear ONLY in commands.txt (documentation) and raw_stdout.txt (verbatim); the normalized oracle outputs carry no host-specific absolute path content.",
+    "Repo fixtures are cloned fresh per run inside /tmp with fixed GIT_AUTHOR_DATE/GIT_COMMITTER_DATE and fixed git user config, so repository byte totals are reproducible.",
+    "P01_DOES_NOT cover host semantic decisions; every language name/flag came from a live Linguist API return value."
+  ]
+}

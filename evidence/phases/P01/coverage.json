@@ -1,0 +1,18 @@
+{
+  "extension_count": 7,
+  "filename_count": 4,
+  "metadata_language_count": 4,
+  "shebang_count": 3,
+  "modeline_count": 3,
+  "heuristic_case_count": 4,
+  "heuristic_same_extension_groups": 2,
+  "vendor_positive": 1,
+  "vendor_negative": 1,
+  "generated_positive": 1,
+  "generated_negative": 1,
+  "documentation_positive": 1,
+  "documentation_negative": 1,
+  "repo_fixture_count": 3,
+  "large_tier_file_count": 63,
+  "all_case_count": 90
+}

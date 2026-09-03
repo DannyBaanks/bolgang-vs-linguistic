@@ -1,0 +1,1 @@
+(empty — verified by capture; the probe produced no stderr output)

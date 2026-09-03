@@ -1,0 +1,2 @@
+/* vim: ft=javascript: */
+console.log("hello");

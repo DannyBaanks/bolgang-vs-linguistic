@@ -1,0 +1,1712 @@
+{
+  "a_ext__hello_c.c": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/a_ext/hello_c.c",
+    "observed": {
+      "language": "C",
+      "strategy": "Extension",
+      "extname": ".c",
+      "mime_type": "text/plain",
+      "size": 53,
+      "loc": 5,
+      "sloc": 4,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "a_ext__hello_go.go": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/a_ext/hello_go.go",
+    "observed": {
+      "language": "Go",
+      "strategy": "Extension",
+      "extname": ".go",
+      "mime_type": "text/plain",
+      "size": 29,
+      "loc": 3,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "a_ext__hello_js.js": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/a_ext/hello_js.js",
+    "observed": {
+      "language": "JavaScript",
+      "strategy": "Extension",
+      "extname": ".js",
+      "mime_type": "text/javascript",
+      "size": 22,
+      "loc": 1,
+      "sloc": 1,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "a_ext__hello_py.py": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/a_ext/hello_py.py",
+    "observed": {
+      "language": "Python",
+      "strategy": "Extension",
+      "extname": ".py",
+      "mime_type": "application/x-python",
+      "size": 15,
+      "loc": 1,
+      "sloc": 1,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "a_ext__hello_rb.rb": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/a_ext/hello_rb.rb",
+    "observed": {
+      "language": "Ruby",
+      "strategy": "Extension",
+      "extname": ".rb",
+      "mime_type": "application/x-ruby",
+      "size": 13,
+      "loc": 1,
+      "sloc": 1,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "a_ext__hello_rs.rs": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/a_ext/hello_rs.rs",
+    "observed": {
+      "language": "Rust",
+      "strategy": "Heuristics",
+      "extname": ".rs",
+      "mime_type": "application/rls-services+xml",
+      "size": 13,
+      "loc": 1,
+      "sloc": 1,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "a_ext__truth_machine.malbolge": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/a_ext/truth_machine.malbolge",
+    "observed": {
+      "language": "Malbolge",
+      "strategy": "Extension",
+      "extname": ".malbolge",
+      "mime_type": "text/plain",
+      "size": 254,
+      "loc": 1,
+      "sloc": 1,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "b_filename__cmake__CMakeLists.txt": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/b_filename/cmake/CMakeLists.txt",
+    "observed": {
+      "language": "CMake",
+      "strategy": "Filename",
+      "extname": ".txt",
+      "mime_type": "text/plain",
+      "size": 48,
+      "loc": 2,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "b_filename__dockerfile__Dockerfile": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/b_filename/dockerfile/Dockerfile",
+    "observed": {
+      "language": "Dockerfile",
+      "strategy": "Filename",
+      "extname": "",
+      "mime_type": "text/plain",
+      "size": 22,
+      "loc": 2,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "b_filename__gemfile__Gemfile": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/b_filename/gemfile/Gemfile",
+    "observed": {
+      "language": "Ruby",
+      "strategy": "Filename",
+      "extname": "",
+      "mime_type": "text/plain",
+      "size": 43,
+      "loc": 3,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "b_filename__makefile__Makefile": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/b_filename/makefile/Makefile",
+    "observed": {
+      "language": "Makefile",
+      "strategy": "Filename",
+      "extname": "",
+      "mime_type": "text/plain",
+      "size": 18,
+      "loc": 2,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "d_shebang__pl_script": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/d_shebang/pl_script",
+    "observed": {
+      "language": "Perl",
+      "strategy": "Classifier",
+      "extname": "",
+      "mime_type": "text/plain",
+      "size": 37,
+      "loc": 2,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "d_shebang__py_script": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/d_shebang/py_script",
+    "observed": {
+      "language": "Python",
+      "strategy": "Shebang",
+      "extname": "",
+      "mime_type": "text/plain",
+      "size": 37,
+      "loc": 2,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "d_shebang__sh_script.sh": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/d_shebang/sh_script.sh",
+    "observed": {
+      "language": "Shell",
+      "strategy": "Shebang",
+      "extname": ".sh",
+      "mime_type": "application/x-sh",
+      "size": 29,
+      "loc": 2,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "e_modeline__emacs_py.txt": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/e_modeline/emacs_py.txt",
+    "observed": {
+      "language": "Python",
+      "strategy": "Modeline",
+      "extname": ".txt",
+      "mime_type": "text/plain",
+      "size": 38,
+      "loc": 2,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "e_modeline__emacs_ruby.txt": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/e_modeline/emacs_ruby.txt",
+    "observed": {
+      "language": "Ruby",
+      "strategy": "Modeline",
+      "extname": ".txt",
+      "mime_type": "text/plain",
+      "size": 28,
+      "loc": 2,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "e_modeline__vim_js.txt": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/e_modeline/vim_js.txt",
+    "observed": {
+      "language": "JavaScript",
+      "strategy": "Modeline",
+      "extname": ".txt",
+      "mime_type": "text/plain",
+      "size": 48,
+      "loc": 2,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "f_ambig__h_cpp.h": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/f_ambig/h_cpp.h",
+    "observed": {
+      "language": "C++",
+      "strategy": "Heuristics",
+      "extname": ".h",
+      "mime_type": "text/plain",
+      "size": 78,
+      "loc": 5,
+      "sloc": 4,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "f_ambig__h_objc.h": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/f_ambig/h_objc.h",
+    "observed": {
+      "language": "Objective-C",
+      "strategy": "Heuristics",
+      "extname": ".h",
+      "mime_type": "text/plain",
+      "size": 57,
+      "loc": 4,
+      "sloc": 3,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "f_ambig__pl_perl.pl": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/f_ambig/pl_perl.pl",
+    "observed": {
+      "language": "Perl",
+      "strategy": "Heuristics",
+      "extname": ".pl",
+      "mime_type": "application/x-perl",
+      "size": 29,
+      "loc": 2,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "f_ambig__pl_prolog.pl": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/f_ambig/pl_prolog.pl",
+    "observed": {
+      "language": "Prolog",
+      "strategy": "Heuristics",
+      "extname": ".pl",
+      "mime_type": "application/x-perl",
+      "size": 34,
+      "loc": 1,
+      "sloc": 1,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "g_flags__documentation_negative__app.py": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/g_flags/documentation_negative/app.py",
+    "observed": {
+      "language": "Python",
+      "strategy": "Extension",
+      "extname": ".py",
+      "mime_type": "application/x-python",
+      "size": 11,
+      "loc": 1,
+      "sloc": 1,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "g_flags__documentation_positive__README.md": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/g_flags/documentation_positive/README.md",
+    "observed": {
+      "language": "Markdown",
+      "strategy": "Heuristics",
+      "extname": ".md",
+      "mime_type": "text/markdown",
+      "size": 34,
+      "loc": 3,
+      "sloc": 2,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": true,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "g_flags__generated_negative__main.rs": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/g_flags/generated_negative/main.rs",
+    "observed": {
+      "language": "Rust",
+      "strategy": "Heuristics",
+      "extname": ".rs",
+      "mime_type": "application/rls-services+xml",
+      "size": 29,
+      "loc": 1,
+      "sloc": 1,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "g_flags__generated_positive__Cargo.lock": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/g_flags/generated_positive/Cargo.lock",
+    "observed": {
+      "language": "TOML",
+      "strategy": "Filename",
+      "extname": ".lock",
+      "mime_type": "text/plain",
+      "size": 103,
+      "loc": 3,
+      "sloc": 3,
+      "flags": {
+        "vendored": false,
+        "generated": true,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "g_flags__vendor_negative__index.js": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/g_flags/vendor_negative/index.js",
+    "observed": {
+      "language": "JavaScript",
+      "strategy": "Extension",
+      "extname": ".js",
+      "mime_type": "text/javascript",
+      "size": 33,
+      "loc": 1,
+      "sloc": 1,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "g_flags__vendor_positive__node_modules__jquery.js": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/g_flags/vendor_positive/node_modules/jquery.js",
+    "observed": {
+      "language": "JavaScript",
+      "strategy": "Extension",
+      "extname": ".js",
+      "mime_type": "text/javascript",
+      "size": 35,
+      "loc": 1,
+      "sloc": 1,
+      "flags": {
+        "vendored": true,
+        "generated": true,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__1C Enterprise__Catalog.Товары.Command.ПечатьПрайсЛиста.CommandModule.bsl": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/1C Enterprise/Catalog.Товары.Command.ПечатьПрайсЛиста.CommandModule.bsl",
+    "observed": {
+      "language": "1C Enterprise",
+      "strategy": "Extension",
+      "extname": ".bsl",
+      "mime_type": "text/plain",
+      "size": 4708,
+      "loc": 85,
+      "sloc": 69,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__2-Dimensional Array__tailmodel.2da": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/2-Dimensional Array/tailmodel.2da",
+    "observed": {
+      "language": "2-Dimensional Array",
+      "strategy": "Extension",
+      "extname": ".2da",
+      "mime_type": "text/plain",
+      "size": 8342,
+      "loc": 100,
+      "sloc": 99,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__4D__generate_project.4dm": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/4D/generate_project.4dm",
+    "observed": {
+      "language": "4D",
+      "strategy": "Extension",
+      "extname": ".4dm",
+      "mime_type": "text/plain",
+      "size": 372,
+      "loc": 12,
+      "sloc": 11,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__ABAP CDS__zcds_monsters_association.ddls.asddls": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/ABAP CDS/zcds_monsters_association.ddls.asddls",
+    "observed": {
+      "language": "ABAP CDS",
+      "strategy": "Extension",
+      "extname": ".asddls",
+      "mime_type": "text/plain",
+      "size": 788,
+      "loc": 19,
+      "sloc": 19,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__ABAP__cl_csv_parser.abap": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/ABAP/cl_csv_parser.abap",
+    "observed": {
+      "language": "ABAP",
+      "strategy": "Extension",
+      "extname": ".abap",
+      "mime_type": "text/plain",
+      "size": 8457,
+      "loc": 219,
+      "sloc": 199,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__ABNF__toml.abnf": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/ABNF/toml.abnf",
+    "observed": {
+      "language": "ABNF",
+      "strategy": "Extension",
+      "extname": ".abnf",
+      "mime_type": "text/plain",
+      "size": 5566,
+      "loc": 190,
+      "sloc": 129,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__AGS Script__GlobalScript.asc": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/AGS Script/GlobalScript.asc",
+    "observed": {
+      "language": "AGS Script",
+      "strategy": "Heuristics",
+      "extname": ".asc",
+      "mime_type": "application/pgp-signature",
+      "size": 15905,
+      "loc": 521,
+      "sloc": 453,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__AIDL__ExtendableParcelable.aidl": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/AIDL/ExtendableParcelable.aidl",
+    "observed": {
+      "language": "AIDL",
+      "strategy": "Extension",
+      "extname": ".aidl",
+      "mime_type": "text/plain",
+      "size": 816,
+      "loc": 25,
+      "sloc": 23,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__ALGOL__example15.alg": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/ALGOL/example15.alg",
+    "observed": {
+      "language": "ALGOL",
+      "strategy": "Heuristics",
+      "extname": ".alg",
+      "mime_type": "text/plain",
+      "size": 424,
+      "loc": 18,
+      "sloc": 16,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__AL__ALIssue.al": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/AL/ALIssue.al",
+    "observed": {
+      "language": "AL",
+      "strategy": "Heuristics",
+      "extname": ".al",
+      "mime_type": "text/plain",
+      "size": 1058,
+      "loc": 51,
+      "sloc": 48,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__AMPL__CT2.mod": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/AMPL/CT2.mod",
+    "observed": {
+      "language": "AMPL",
+      "strategy": "Classifier",
+      "extname": ".mod",
+      "mime_type": "text/plain",
+      "size": 1975,
+      "loc": 58,
+      "sloc": 36,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__API Blueprint__actions.apib": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/API Blueprint/actions.apib",
+    "observed": {
+      "language": "API Blueprint",
+      "strategy": "Extension",
+      "extname": ".apib",
+      "mime_type": "text/plain",
+      "size": 1290,
+      "loc": 55,
+      "sloc": 41,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__APL__DeepakChopra.apl": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/APL/DeepakChopra.apl",
+    "observed": {
+      "language": "APL",
+      "strategy": "Extension",
+      "extname": ".apl",
+      "mime_type": "text/plain",
+      "size": 640,
+      "loc": 18,
+      "sloc": 10,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__ASL__example.asl": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/ASL/example.asl",
+    "observed": {
+      "language": "ASL",
+      "strategy": "Extension",
+      "extname": ".asl",
+      "mime_type": "text/plain",
+      "size": 9449,
+      "loc": 375,
+      "sloc": 314,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__ASN.1__example.asn": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/ASN.1/example.asn",
+    "observed": {
+      "language": "ASN.1",
+      "strategy": "Extension",
+      "extname": ".asn",
+      "mime_type": "text/plain",
+      "size": 885,
+      "loc": 33,
+      "sloc": 28,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__ASP.NET__EchoSocket.ashx": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/ASP.NET/EchoSocket.ashx",
+    "observed": {
+      "language": "ASP.NET",
+      "strategy": "Extension",
+      "extname": ".ashx",
+      "mime_type": "text/plain",
+      "size": 110,
+      "loc": 1,
+      "sloc": 1,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__ATS__basis_ssntype.sats": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/ATS/basis_ssntype.sats",
+    "observed": {
+      "language": "ATS",
+      "strategy": "Extension",
+      "extname": ".sats",
+      "mime_type": "text/plain",
+      "size": 7231,
+      "loc": 318,
+      "sloc": 310,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__ActionScript__FooBar.as": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/ActionScript/FooBar.as",
+    "observed": {
+      "language": "ActionScript",
+      "strategy": "Heuristics",
+      "extname": ".as",
+      "mime_type": "text/plain",
+      "size": 510,
+      "loc": 35,
+      "sloc": 30,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Adblock Filter List__abp-filters-anti-cv.txt": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Adblock Filter List/abp-filters-anti-cv.txt",
+    "observed": {
+      "language": "Adblock Filter List",
+      "strategy": "Heuristics",
+      "extname": ".txt",
+      "mime_type": "text/plain",
+      "size": 6508,
+      "loc": 82,
+      "sloc": 82,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Adobe Font Metrics__lambda.afm": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Adobe Font Metrics/lambda.afm",
+    "observed": {
+      "language": "Adobe Font Metrics",
+      "strategy": "Extension",
+      "extname": ".afm",
+      "mime_type": "application/x-font-type1",
+      "size": 700,
+      "loc": 23,
+      "sloc": 23,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Agda__NatCat.agda": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Agda/NatCat.agda",
+    "observed": {
+      "language": "Agda",
+      "strategy": "Extension",
+      "extname": ".agda",
+      "mime_type": "text/plain",
+      "size": 1418,
+      "loc": 39,
+      "sloc": 29,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Aiken__multi.ak": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Aiken/multi.ak",
+    "observed": {
+      "language": "Aiken",
+      "strategy": "Extension",
+      "extname": ".ak",
+      "mime_type": "text/plain",
+      "size": 4337,
+      "loc": 162,
+      "sloc": 141,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Aleo__arrays_in_finalize.aleo": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Aleo/arrays_in_finalize.aleo",
+    "observed": {
+      "language": "Aleo",
+      "strategy": "Extension",
+      "extname": ".aleo",
+      "mime_type": "text/plain",
+      "size": 1650,
+      "loc": 41,
+      "sloc": 36,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Alloy__file_system.als": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Alloy/file_system.als",
+    "observed": {
+      "language": "Alloy",
+      "strategy": "Extension",
+      "extname": ".als",
+      "mime_type": "text/plain",
+      "size": 1239,
+      "loc": 59,
+      "sloc": 45,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Alpine Abuild__filenames__APKBUILD": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Alpine Abuild/filenames/APKBUILD",
+    "observed": {
+      "language": "Alpine Abuild",
+      "strategy": "Filename",
+      "extname": "",
+      "mime_type": "text/plain",
+      "size": 2085,
+      "loc": 70,
+      "sloc": 64,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Altium Designer__Sample Output Job.OutJob": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Altium Designer/Sample Output Job.OutJob",
+    "observed": {
+      "language": "Altium Designer",
+      "strategy": "Extension",
+      "extname": ".OutJob",
+      "mime_type": "text/plain",
+      "size": 1774,
+      "loc": 70,
+      "sloc": 66,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__AngelScript__botmanager.as": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/AngelScript/botmanager.as",
+    "observed": {
+      "language": "AngelScript",
+      "strategy": "Classifier",
+      "extname": ".as",
+      "mime_type": "text/plain",
+      "size": 1686,
+      "loc": 77,
+      "sloc": 61,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Answer Set Programming__15puzzle-encoding.lp": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Answer Set Programming/15puzzle-encoding.lp",
+    "observed": {
+      "language": "Answer Set Programming",
+      "strategy": "Heuristics",
+      "extname": ".lp",
+      "mime_type": "text/plain",
+      "size": 1030,
+      "loc": 43,
+      "sloc": 30,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Ant Build System__filenames__ant.xml": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Ant Build System/filenames/ant.xml",
+    "observed": {
+      "language": "Ant Build System",
+      "strategy": "Filename",
+      "extname": ".xml",
+      "mime_type": "application/xml",
+      "size": 4531,
+      "loc": 110,
+      "sloc": 87,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Antlers__index.antlers.html": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Antlers/index.antlers.html",
+    "observed": {
+      "language": "Antlers",
+      "strategy": "Extension",
+      "extname": ".html",
+      "mime_type": "text/html",
+      "size": 1249,
+      "loc": 27,
+      "sloc": 27,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__ApacheConf__apache.vhost": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/ApacheConf/apache.vhost",
+    "observed": {
+      "language": "ApacheConf",
+      "strategy": "Classifier",
+      "extname": ".vhost",
+      "mime_type": "text/plain",
+      "size": 426,
+      "loc": 17,
+      "sloc": 15,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Apex__AccountTrigger.trigger": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Apex/AccountTrigger.trigger",
+    "observed": {
+      "language": "Apex",
+      "strategy": "Classifier",
+      "extname": ".trigger",
+      "mime_type": "text/plain",
+      "size": 1045,
+      "loc": 33,
+      "sloc": 29,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__AppleScript__center.applescript": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/AppleScript/center.applescript",
+    "observed": {
+      "language": "AppleScript",
+      "strategy": "Extension",
+      "extname": ".applescript",
+      "mime_type": "text/plain",
+      "size": 1445,
+      "loc": 50,
+      "sloc": 41,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__AsciiDoc__encoding.asciidoc": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/AsciiDoc/encoding.asciidoc",
+    "observed": {
+      "language": "AsciiDoc",
+      "strategy": "Extension",
+      "extname": ".asciidoc",
+      "mime_type": "text/plain",
+      "size": 435,
+      "loc": 13,
+      "sloc": 9,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__AspectJ__CacheAspect.aj": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/AspectJ/CacheAspect.aj",
+    "observed": {
+      "language": "AspectJ",
+      "strategy": "Extension",
+      "extname": ".aj",
+      "mime_type": "text/plain",
+      "size": 1151,
+      "loc": 41,
+      "sloc": 30,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Assembly__3D_PRG.I": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Assembly/3D_PRG.I",
+    "observed": {
+      "language": "Assembly",
+      "strategy": "Classifier",
+      "extname": ".I",
+      "mime_type": "text/plain",
+      "size": 2171,
+      "loc": 82,
+      "sloc": 77,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Astro__index.astro": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Astro/index.astro",
+    "observed": {
+      "language": "Astro",
+      "strategy": "Extension",
+      "extname": ".astro",
+      "mime_type": "text/plain",
+      "size": 1840,
+      "loc": 56,
+      "sloc": 51,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Asymptote__figarc4_3D.asy": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Asymptote/figarc4_3D.asy",
+    "observed": {
+      "language": "Asymptote",
+      "strategy": "Heuristics",
+      "extname": ".asy",
+      "mime_type": "text/plain",
+      "size": 3693,
+      "loc": 117,
+      "sloc": 78,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__AutoHotkey__hello.ah1": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/AutoHotkey/hello.ah1",
+    "observed": {
+      "language": "AutoHotkey",
+      "strategy": "Extension",
+      "extname": ".ah1",
+      "mime_type": "text/plain",
+      "size": 296,
+      "loc": 18,
+      "sloc": 15,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Avro IDL__user.avdl": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Avro IDL/user.avdl",
+    "observed": {
+      "language": "Avro IDL",
+      "strategy": "Extension",
+      "extname": ".avdl",
+      "mime_type": "text/plain",
+      "size": 7255,
+      "loc": 269,
+      "sloc": 222,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Awk__test.awk": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Awk/test.awk",
+    "observed": {
+      "language": "Awk",
+      "strategy": "Shebang",
+      "extname": ".awk",
+      "mime_type": "text/plain",
+      "size": 4649,
+      "loc": 121,
+      "sloc": 117,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__B (Formal Method)__Airlock.mch": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/B (Formal Method)/Airlock.mch",
+    "observed": {
+      "language": "B (Formal Method)",
+      "strategy": "Extension",
+      "extname": ".mch",
+      "mime_type": "text/plain",
+      "size": 2490,
+      "loc": 98,
+      "sloc": 91,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__B4X__B4XMainPage.bas": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/B4X/B4XMainPage.bas",
+    "observed": {
+      "language": "B4X",
+      "strategy": "Heuristics",
+      "extname": ".bas",
+      "mime_type": "text/plain",
+      "size": 1544,
+      "loc": 57,
+      "sloc": 49,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__BAML__clients.baml": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/BAML/clients.baml",
+    "observed": {
+      "language": "BAML",
+      "strategy": "Extension",
+      "extname": ".baml",
+      "mime_type": "text/plain",
+      "size": 1141,
+      "loc": 68,
+      "sloc": 59,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__BASIC__GPIOGW.BAS": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/BASIC/GPIOGW.BAS",
+    "observed": {
+      "language": "BASIC",
+      "strategy": "Heuristics",
+      "extname": ".BAS",
+      "mime_type": "text/plain",
+      "size": 1484,
+      "loc": 59,
+      "sloc": 59,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__BBCode__guide.bbcode": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/BBCode/guide.bbcode",
+    "observed": {
+      "language": "BBCode",
+      "strategy": "Extension",
+      "extname": ".bbcode",
+      "mime_type": "text/plain",
+      "size": 1977,
+      "loc": 23,
+      "sloc": 23,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__BIRD2__filenames__bird.conf": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/BIRD2/filenames/bird.conf",
+    "observed": {
+      "language": "BIRD2",
+      "strategy": "Filename",
+      "extname": ".conf",
+      "mime_type": "text/plain",
+      "size": 6339,
+      "loc": 237,
+      "sloc": 207,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__B__brtb.b": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/B/brtb.b",
+    "observed": {
+      "language": "B",
+      "strategy": "Heuristics",
+      "extname": ".b",
+      "mime_type": "text/plain",
+      "size": 1060,
+      "loc": 65,
+      "sloc": 59,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Ballerina__hello-world-service.bal": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Ballerina/hello-world-service.bal",
+    "observed": {
+      "language": "Ballerina",
+      "strategy": "Extension",
+      "extname": ".bal",
+      "mime_type": "text/plain",
+      "size": 822,
+      "loc": 16,
+      "sloc": 15,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Batchfile__filenames__gradlew.bat": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Batchfile/filenames/gradlew.bat",
+    "observed": {
+      "language": "Batchfile",
+      "strategy": "Filename",
+      "extname": ".bat",
+      "mime_type": "application/x-msdos-program",
+      "size": 2896,
+      "loc": 93,
+      "sloc": 72,
+      "flags": {
+        "vendored": true,
+        "generated": true,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Beef__Program.bf": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Beef/Program.bf",
+    "observed": {
+      "language": "Beef",
+      "strategy": "Heuristics",
+      "extname": ".bf",
+      "mime_type": "text/plain",
+      "size": 3363,
+      "loc": 115,
+      "sloc": 98,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Befunge__aturley.bf": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Befunge/aturley.bf",
+    "observed": {
+      "language": "Befunge",
+      "strategy": "Classifier",
+      "extname": ".bf",
+      "mime_type": "text/plain",
+      "size": 314,
+      "loc": 4,
+      "sloc": 4,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Berry__berry_schema_validator.be": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Berry/berry_schema_validator.be",
+    "observed": {
+      "language": "Berry",
+      "strategy": "Extension",
+      "extname": ".be",
+      "mime_type": "text/plain",
+      "size": 8211,
+      "loc": 279,
+      "sloc": 269,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__BibTeX Style__bibkeys.bst": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/BibTeX Style/bibkeys.bst",
+    "observed": {
+      "language": "BibTeX Style",
+      "strategy": "Heuristics",
+      "extname": ".bst",
+      "mime_type": "text/plain",
+      "size": 1787,
+      "loc": 61,
+      "sloc": 51,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__BibTeX__citations.bib": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/BibTeX/citations.bib",
+    "observed": {
+      "language": "BibTeX",
+      "strategy": "Extension",
+      "extname": ".bib",
+      "mime_type": "text/plain",
+      "size": 898,
+      "loc": 29,
+      "sloc": 25,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Bicep__101-container-registry.bicep": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Bicep/101-container-registry.bicep",
+    "observed": {
+      "language": "Bicep",
+      "strategy": "Extension",
+      "extname": ".bicep",
+      "mime_type": "text/plain",
+      "size": 923,
+      "loc": 33,
+      "sloc": 28,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Bikeshed__example.bs": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Bikeshed/example.bs",
+    "observed": {
+      "language": "Bikeshed",
+      "strategy": "Heuristics",
+      "extname": ".bs",
+      "mime_type": "text/plain",
+      "size": 10283,
+      "loc": 211,
+      "sloc": 204,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__BitBake__cmake.bbclass": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/BitBake/cmake.bbclass",
+    "observed": {
+      "language": "BitBake",
+      "strategy": "Extension",
+      "extname": ".bbclass",
+      "mime_type": "text/plain",
+      "size": 9148,
+      "loc": 233,
+      "sloc": 191,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Blade__hello.blade": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Blade/hello.blade",
+    "observed": {
+      "language": "Blade",
+      "strategy": "Extension",
+      "extname": ".blade",
+      "mime_type": "text/plain",
+      "size": 355,
+      "loc": 21,
+      "sloc": 18,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__BlitzBasic__HalfAndDouble.bb": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/BlitzBasic/HalfAndDouble.bb",
+    "observed": {
+      "language": "BlitzBasic",
+      "strategy": "Heuristics",
+      "extname": ".bb",
+      "mime_type": "text/plain",
+      "size": 2722,
+      "loc": 147,
+      "sloc": 93,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__BlitzMax__sample.bmx": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/BlitzMax/sample.bmx",
+    "observed": {
+      "language": "BlitzMax",
+      "strategy": "Extension",
+      "extname": ".bmx",
+      "mime_type": "text/plain",
+      "size": 294,
+      "loc": 25,
+      "sloc": 19,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Blueprint__counter_window.blp": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Blueprint/counter_window.blp",
+    "observed": {
+      "language": "Blueprint",
+      "strategy": "Extension",
+      "extname": ".blp",
+      "mime_type": "text/plain",
+      "size": 1286,
+      "loc": 57,
+      "sloc": 47,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  },
+  "tier__samples__Bluespec__TbTL.bsv": {
+    "platform_path": "/work/bolgang/evidence/phases/P01/corpus/files/tier/samples/Bluespec/TbTL.bsv",
+    "observed": {
+      "language": "Bluespec",
+      "strategy": "Extension",
+      "extname": ".bsv",
+      "mime_type": "text/plain",
+      "size": 2675,
+      "loc": 109,
+      "sloc": 86,
+      "flags": {
+        "vendored": false,
+        "generated": false,
+        "documentation": false,
+        "binary": false,
+        "text": true
+      }
+    }
+  }
+}

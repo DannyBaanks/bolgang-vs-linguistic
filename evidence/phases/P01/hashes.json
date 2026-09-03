@@ -1,0 +1,42 @@
+{
+  "phase": "P01",
+  "artifacts": {
+    "oracle_repo": {
+      "remote": "https://github.com/github-linguist/linguist.git",
+      "pristine_upstream_main": "d5214e1612c858ba14bf98edeca57e1683276f1d",
+      "working_head": "b88d632053392ec83fdb00cdc2a39ac3cabb301c",
+      "parent": "d5214e1612c858ba14bf98edeca57e1683276f1d",
+      "working_tree_state": "clean"
+    },
+    "corpus_manifest": {
+      "path": "evidence/phases/P01/corpus/manifest.json",
+      "sha256": "04998a2482f5fc6ab9488669b873f2f614d116191a76ef87f1ca1977e669834a"
+    },
+    "corpus_builder_py": {
+      "path": "scripts/p01_build_corpus.py",
+      "sha256": "ac8f7b5510c095da05579c892162905b83c71b015b9db7608b5013db9c8230a0"
+    },
+    "probe_rb": {
+      "path": "scripts/p01_probe.rb",
+      "sha256": "0cba9e0549f9d9e1e0b0c344479a577665f7c1f02fa44841a683c14fe13f3815"
+    },
+    "normalized_run_outputs": {
+      "run1": "de259e8322ad1d4c501f270819102ce19d2643333d44d4f1cd2ce07bbb86fb24",
+      "run2": "de259e8322ad1d4c501f270819102ce19d2643333d44d4f1cd2ce07bbb86fb24",
+      "match": true
+    },
+    "raw_outputs": {
+      "run1": "7601703e8fd45a29dcb9e647f24d010d67b2289c51f5f180e77c38c49ef567f4",
+      "run2": "7601703e8fd45a29dcb9e647f24d010d67b2289c51f5f180e77c38c49ef567f4",
+      "match": true
+    },
+    "manifest_builder_required_arg": "scripts/p01_build_corpus.py takes --upstream <LINGUIST_COLD>; nothing is hard-coded to a workstation path.",
+    "represents_p01_result": true
+  },
+  "notes": [
+    "Per-fixture sha256 values are inlined inside corpus/manifest.json (every entry carries sha256 and size_bytes).",
+    "corpus/files/** and corpus/repos/** are the exact bytes the frozen oracle saw.",
+    "corpus/files/a_ext/truth_machine.malbolge is byte-identical to upstream samples/Malbolge/truth_machine.malbolge (both SHA256 7062713e96dae33f5672fc4dcd654d5657e3c0ab44fd03bd93ebdd3ec43feb82).",
+    "Large-tier entries: the `source_reference` points to the upstream path the bytes were copied from."
+  ]
+}

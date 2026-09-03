@@ -1,0 +1,56 @@
+# P01 — commands.txt
+#
+# Path placeholders (per-project local state; not part of proof):
+#   <BOLGANG_REPO>  = root of this repository checkout
+#   <LINGUIST_COLD> = P00-frozen Linguist checkout (the copied upstream)
+#
+# Run from repo root. All heavy execution happens inside the pinned container:
+# image malbolge-linguist-addgrammar:latest + volume malbolge-canonical-bundle.
+
+# 0. Preconditions (read-only)
+git rev-parse HEAD
+git status --porcelain
+git -C "<LINGUIST_COLD>" rev-parse HEAD
+git -C "<LINGUIST_COLD>" rev-parse HEAD^
+git -C "<LINGUIST_COLD>" status --porcelain
+git -C "<LINGUIST_COLD>" branch --show-current
+
+# 1. Build/refresh the corpus (deterministic fixture generation)
+py "<BOLGANG_REPO>\scripts\p01_build_corpus.py" --upstream "<LINGUIST_COLD>"
+
+# 2. Oracle run #1 (frozen checkout + frozen corpus)
+docker run --rm \
+  -v "<LINGUIST_COLD>:/work/patched" \
+  -v "<BOLGANG_REPO>:/work/bolgang" \
+  -v malbolge-canonical-bundle:/usr/local/bundle \
+  malbolge-linguist-addgrammar:latest sh -c '
+    cd /work/patched && bundle check
+    cd /work/bolgang/evidence/phases/P01
+    BUNDLE_GEMFILE=/work/patched/Gemfile bundle exec ruby \
+      /work/bolgang/scripts/p01_probe.rb \
+        --patch-lib /work/patched/lib \
+        --corpus /work/bolgang/evidence/phases/P01/corpus \
+        --out /work/bolgang/evidence/phases/P01/oracle/run1.normalized.json \
+        --raw  /work/bolgang/evidence/phases/P01/oracle/run1.raw.json
+  '
+
+# 3. Oracle run #2 (identical command, second fresh process)
+docker run --rm \
+  -v "<LINGUIST_COLD>:/work/patched" \
+  -v "<BOLGANG_REPO>:/work/bolgang" \
+  -v malbolge-canonical-bundle:/usr/local/bundle \
+  malbolge-linguist-addgrammar:latest sh -c '
+    cd /work/patched && bundle check
+    cd /work/bolgang/evidence/phases/P01
+    BUNDLE_GEMFILE=/work/patched/Gemfile bundle exec ruby \
+      /work/bolgang/scripts/p01_probe.rb \
+        --patch-lib /work/patched/lib \
+        --corpus /work/bolgang/evidence/phases/P01/corpus \
+        --out /work/bolgang/evidence/phases/P01/oracle/run2.normalized.json \
+        --raw  /work/bolgang/evidence/phases/P01/oracle/run2.raw.json
+  '
+
+# 4. Determinism gate (host-side hashing)
+sha256sum oracle/run1.normalized.json oracle/run2.normalized.json
+sha256sum oracle/run1.raw.json oracle/run2.raw.json
+# EXPECT: both .normalized equal one another; both .raw equal one another.
