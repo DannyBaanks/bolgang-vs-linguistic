@@ -4,13 +4,17 @@
     "AGENT_START_HERE.md":  "4f269a615a264fe0072f32b4d770f05aa607b112c646fddfc8fe444a66c9b769",
     "architecture/ANCHOR_PROTOCOL.md":  "1db700394cafc84c215d43b07b18cdae7d5d56966facc422d43fb8b702bd61b6",
     "architecture/EXECUTION_MODEL.md":  "1616405a5b232469f048b5f7226f487a997bdb1de21026d1ec6d1358f99b9425",
+    "architecture/SEMANTIC_GRAPH_SCHEMA.md":  "8112436aff88b1283f9c0fafac1f09e40f0ba485e8f7d51eafe18a43ed92f2a3",
     "CLAIM_FIREWALL.md":  "6ae5f5f3afd1bda0da868a1bd2fb6878cb080000b3caae4c41019007b5bcee42",
     "evidence/EVIDENCE_CONTRACT.md":  "082d0c3196aab52a42eafb4c70548206234589e49ed47033d77f34c42da08c32",
     "evidence/PHASE_RESULT_TEMPLATE.md":  "c562df9c04dac36dc34f29e81b7f1e9e60bf548c0a935a834c6d032a08496b04",
-    "PROJECT_STATUS.md":  "44ce312b2863cbf1ddae8065287496c6ae5ef60c87db6b2047d7f0f002191c42",
+    "PROJECT_STATUS.md":  "69518476a18467e86a21579d9b2a48a3b5bbece0b9448999dda8790eebf2bd4f",
     "README.md":  "37bd1e1780570159a48c3a8f77e63f9042b54c4dc025fe0c4c743177a90f13c7",
     "ROADMAP.md":  "6f0287b5894822900d00cfa407f9d390c8bec7c0128197f4dfc4548f65983030",
     "scripts/p01_build_corpus.py":  "ac8f7b5510c095da05579c892162905b83c71b015b9db7608b5013db9c8230a0",
     "scripts/p01_probe.rb":  "0cba9e0549f9d9e1e0b0c344479a577665f7c1f02fa44841a683c14fe13f3815",
+    "scripts/p02_build_semantic_graph.py":  "49c9b9d161d84732385dc7ca547938ca3046fdf7c252f5f25c5b897da6d425a5",
+    "scripts/p02_trace_oracle.rb":  "6857c25eccfda5bd36ffb9265fb4d1e011e1d11a5e03d72246669cad0d52a29a",
+    "scripts/p02_verify_semantic_graph.py":  "d050d5f750c2859e4e36a6851bbbd0cafee0a7e01060d6a49c75137b687a8f03",
     "scripts/update_roadmap_hashes.ps1":  "07385bc412d39307c482305e25da405cbe193b566dfd24d3812fb964181fa2c6"
 }

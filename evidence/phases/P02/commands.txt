@@ -1,0 +1,79 @@
+# P02 — commands.txt
+#
+# Placeholders:
+#   <BOLGANG_REPO>  = root of this repository checkout
+#   <LINGUIST_COLD> = P00-frozen Linguist upstream checkout (malbolge patch)
+
+# 0. Preconditions (read-only)
+git rev-parse HEAD
+git status --porcelain
+git -C "<LINGUIST_COLD>" rev-parse HEAD
+git -C "<LINGUIST_COLD>" status --porcelain
+
+# 1. Rebuild P01 corpus (deterministic from frozen upstream checkout)
+py "<BOLGANG_REPO>\scripts\p01_build_corpus.py" --upstream "<LINGUIST_COLD>"
+
+# 2. Semantic tracing, run 1
+docker run --rm \
+  -v "<LINGUIST_COLD>:/work/patched" \
+  -v "<BOLGANG_REPO>:/work/bolgang" \
+  -v malbolge-canonical-bundle:/usr/local/bundle \
+  malbolge-linguist-addgrammar:latest sh -c '
+    cd /work/patched && bundle check >/dev/null 2>&1
+    BUNDLE_GEMFILE=/work/patched/Gemfile bundle exec ruby \
+      -I/work/patched/lib \
+      /work/bolgang/scripts/p02_trace_oracle.rb \
+        --patch-lib /work/patched/lib \
+        --corpus /work/bolgang/evidence/phases/P01/corpus \
+        --p01 /work/bolgang/evidence/phases/P01/oracle/run1.normalized.json \
+        --out /work/bolgang/evidence/phases/P02/traces/run1.normalized.json \
+        --raw /work/bolgang/evidence/phases/P02/traces/run1.raw.json
+  '
+
+# 3. Semantic tracing, run 2 (identical command, fresh process)
+docker run --rm \
+  -v "<LINGUIST_COLD>:/work/patched" \
+  -v "<BOLGANG_REPO>:/work/bolgang" \
+  -v malbolge-canonical-bundle:/usr/local/bundle \
+  malbolge-linguist-addgrammar:latest sh -c '
+    cd /work/patched && bundle check >/dev/null 2>&1
+    BUNDLE_GEMFILE=/work/patched/Gemfile bundle exec ruby \
+      -I/work/patched/lib \
+      /work/bolgang/scripts/p02_trace_oracle.rb \
+        --patch-lib /work/patched/lib \
+        --corpus /work/bolgang/evidence/phases/P01/corpus \
+        --p01 /work/bolgang/evidence/phases/P01/oracle/run1.normalized.json \
+        --out /work/bolgang/evidence/phases/P02/traces/run2.normalized.json \
+        --raw /work/bolgang/evidence/phases/P02/traces/run2.raw.json
+  '
+
+# 4. Determinism gate
+sha256sum traces/run1.normalized.json traces/run2.normalized.json
+
+# 5. Graph reduction (twice, once per normalized trace run)
+py "<BOLGANG_REPO>\scripts\p02_build_semantic_graph.py" \
+  --traces evidence/phases/P02/traces/run1.normalized.json \
+  --upstream "<LINGUIST_COLD>" \
+  --out evidence/phases/P02/semantic_graph.json \
+  --source-map-out evidence/phases/P02/source_map.json \
+  --deps-out evidence/phases/P02/data_dependencies.json
+
+py "<BOLGANG_REPO>\scripts\p02_build_semantic_graph.py" \
+  --traces evidence/phases/P02/traces/run2.normalized.json \
+  --upstream "<LINGUIST_COLD>" \
+  --out evidence/phases/P02/semantic_graph_from_run2.json \
+  --source-map-out evidence/phases/P02/source_map_from_run2.json \
+  --deps-out evidence/phases/P02/data_dependencies_from_run2.json
+
+# 6. Invariant verification
+py "<BOLGANG_REPO>\scripts\p02_verify_semantic_graph.py" \
+  --traces evidence/phases/P02/traces/run1.normalized.json \
+  --traces-b evidence/phases/P02/traces/run2.normalized.json \
+  --graph evidence/phases/P02/semantic_graph.json \
+  --graph-b evidence/phases/P02/semantic_graph_from_run2.json \
+  --p01 evidence/phases/P01/oracle/run1.normalized.json \
+  --parity evidence/phases/P02/traces/run1.terminal_parity.json
+
+# 7. Coverage summary
+# computed via scripts in the container as part of checks; the final artifact
+# is already committed.

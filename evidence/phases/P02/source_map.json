@@ -1,0 +1,602 @@
+{
+ "rows": [
+  {
+   "methods_or_constants": [
+    "Linguist::Classifier.call",
+    "Classifier.classify",
+    "Samples.cache",
+    "Samples.load_samples"
+   ],
+   "semantic_operation": "classifier.call",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/classifier.rb",
+     "sha256": "41f92693a30d6b2904a27f0e05c71f4a27bab371d561f206baf81ceda49faf76"
+    },
+    {
+     "relative_path": "lib/linguist/samples.rb",
+     "sha256": "f03fbf1d9d19c20309cb987199045376da2d9f241dbfedbcd93a148b6c7a39dd"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Classifier is a trained-tag centroid model over sample tokens. Uses the cached samples matrix already trained upstream."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Classifier.call",
+    "Classifier.classify",
+    "Samples.cache",
+    "Samples.load_samples"
+   ],
+   "semantic_operation": "classifier.call.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/classifier.rb",
+     "sha256": "41f92693a30d6b2904a27f0e05c71f4a27bab371d561f206baf81ceda49faf76"
+    },
+    {
+     "relative_path": "lib/linguist/samples.rb",
+     "sha256": "f03fbf1d9d19c20309cb987199045376da2d9f241dbfedbcd93a148b6c7a39dd"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Classifier is a trained-tag centroid model over sample tokens. Uses the cached samples matrix already trained upstream."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist.detect",
+    "STRATEGIES"
+   ],
+   "semantic_operation": "detect.started",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist.rb",
+     "sha256": "9dd197f3c490878866c568afc8792d427943dbf28df9def6c4ff7b9ddc56f37e"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Top-level detection entry/exit; the ordered strategy list drives candidate refinement."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist.detect",
+    "STRATEGIES"
+   ],
+   "semantic_operation": "detect.terminal",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist.rb",
+     "sha256": "9dd197f3c490878866c568afc8792d427943dbf28df9def6c4ff7b9ddc56f37e"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Top-level detection entry/exit; the ordered strategy list drives candidate refinement."
+  },
+  {
+   "methods_or_constants": [
+    "BlobHelper#binary?",
+    "BlobHelper#likely_binary?"
+   ],
+   "semantic_operation": "flag.binary_check",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/blob_helper.rb",
+     "sha256": "0426ee9809f407c0c57509017be053952921f10d6c0035313fced2b3284f6116"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Flags a blob as binary so detect can short-circuit without matching any strategy."
+  },
+  {
+   "methods_or_constants": [
+    "BlobHelper#documentation?"
+   ],
+   "semantic_operation": "flag.documentation",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/blob_helper.rb",
+     "sha256": "0426ee9809f407c0c57509017be053952921f10d6c0035313fced2b3284f6116"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Documentation classification by path regexp."
+  },
+  {
+   "methods_or_constants": [
+    "CG Instances",
+    "Generated#generated?",
+    "Generated#generated_go?",
+    "generated_parser?",
+    "generated_postscript?",
+    "generated_protocol_buffer",
+    "generated_by_zephir?",
+    "generated_net_docfile?"
+   ],
+   "semantic_operation": "flag.generated",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/generated.rb",
+     "sha256": "10fd36be2dae4daa089ad623a1cbf505235ba535a419dcd8ee31f63dad5511df"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Generated classification by marker/rule checks."
+  },
+  {
+   "methods_or_constants": [
+    "BlobHelper#vendored?"
+   ],
+   "semantic_operation": "flag.vendored",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/blob_helper.rb",
+     "sha256": "0426ee9809f407c0c57509017be053952921f10d6c0035313fced2b3284f6116"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Vendored classification by path regexp matching."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Heuristics.call",
+    "Heuristics.load",
+    "Heuristics#matches?",
+    "Heuristics#call"
+   ],
+   "semantic_operation": "heuristics.call",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/heuristics.rb",
+     "sha256": "7426148990075521166a3fce4375ca42636e71aec0182bd2bee5b1cb9f912c9e"
+    },
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Heuristics disambiguate candidates by matching herlper patterns (from heuristics.yml) against content."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Heuristics.call",
+    "Heuristics.load",
+    "Heuristics#matches?",
+    "Heuristics#call"
+   ],
+   "semantic_operation": "heuristics.call.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/heuristics.rb",
+     "sha256": "7426148990075521166a3fce4375ca42636e71aec0182bd2bee5b1cb9f912c9e"
+    },
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Heuristics disambiguate candidates by matching herlper patterns (from heuristics.yml) against content."
+  },
+  {
+   "methods_or_constants": [
+    "Language.find_by_alias",
+    "Language.find_by_filename",
+    "Language.find_by_extension",
+    "Language.find_by_interpreter",
+    "Language.alias_index",
+    "Language.filename_index",
+    "Language.extension_index",
+    "Language.interpreter_index"
+   ],
+   "semantic_operation": "metadata.find_by_alias",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Language metadata lookups consult the frozen languages.yml index."
+  },
+  {
+   "methods_or_constants": [
+    "Language.find_by_alias",
+    "Language.find_by_filename",
+    "Language.find_by_extension",
+    "Language.find_by_interpreter",
+    "Language.alias_index",
+    "Language.filename_index",
+    "Language.extension_index",
+    "Language.interpreter_index"
+   ],
+   "semantic_operation": "metadata.find_by_alias.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Language metadata lookups consult the frozen languages.yml index."
+  },
+  {
+   "methods_or_constants": [
+    "Language.find_by_alias",
+    "Language.find_by_filename",
+    "Language.find_by_extension",
+    "Language.find_by_interpreter",
+    "Language.alias_index",
+    "Language.filename_index",
+    "Language.extension_index",
+    "Language.interpreter_index"
+   ],
+   "semantic_operation": "metadata.find_by_extension",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Language metadata lookups consult the frozen languages.yml index."
+  },
+  {
+   "methods_or_constants": [
+    "Language.find_by_alias",
+    "Language.find_by_filename",
+    "Language.find_by_extension",
+    "Language.find_by_interpreter",
+    "Language.alias_index",
+    "Language.filename_index",
+    "Language.extension_index",
+    "Language.interpreter_index"
+   ],
+   "semantic_operation": "metadata.find_by_extension.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Language metadata lookups consult the frozen languages.yml index."
+  },
+  {
+   "methods_or_constants": [
+    "Language.find_by_alias",
+    "Language.find_by_filename",
+    "Language.find_by_extension",
+    "Language.find_by_interpreter",
+    "Language.alias_index",
+    "Language.filename_index",
+    "Language.extension_index",
+    "Language.interpreter_index"
+   ],
+   "semantic_operation": "metadata.find_by_filename",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Language metadata lookups consult the frozen languages.yml index."
+  },
+  {
+   "methods_or_constants": [
+    "Language.find_by_alias",
+    "Language.find_by_filename",
+    "Language.find_by_extension",
+    "Language.find_by_interpreter",
+    "Language.alias_index",
+    "Language.filename_index",
+    "Language.extension_index",
+    "Language.interpreter_index"
+   ],
+   "semantic_operation": "metadata.find_by_filename.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Language metadata lookups consult the frozen languages.yml index."
+  },
+  {
+   "methods_or_constants": [
+    "Language.find_by_alias",
+    "Language.find_by_filename",
+    "Language.find_by_extension",
+    "Language.find_by_interpreter",
+    "Language.alias_index",
+    "Language.filename_index",
+    "Language.extension_index",
+    "Language.interpreter_index"
+   ],
+   "semantic_operation": "metadata.find_by_interpreter",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Language metadata lookups consult the frozen languages.yml index."
+  },
+  {
+   "methods_or_constants": [
+    "Language.find_by_alias",
+    "Language.find_by_filename",
+    "Language.find_by_extension",
+    "Language.find_by_interpreter",
+    "Language.alias_index",
+    "Language.filename_index",
+    "Language.extension_index",
+    "Language.interpreter_index"
+   ],
+   "semantic_operation": "metadata.find_by_interpreter.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Language metadata lookups consult the frozen languages.yml index."
+  },
+  {
+   "methods_or_constants": [
+    "Language.find_by_alias",
+    "Language.find_by_filename",
+    "Language.find_by_extension",
+    "Language.find_by_interpreter",
+    "Language.alias_index",
+    "Language.filename_index",
+    "Language.extension_index",
+    "Language.interpreter_index"
+   ],
+   "semantic_operation": "metadata.language_lookup",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Language metadata lookups consult the frozen languages.yml index."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Repository#languages",
+    "Repository#compute_stats",
+    "Repository#breakdown_by_file"
+   ],
+   "semantic_operation": "repo.breakdown_by_file",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/repository.rb",
+     "sha256": "21070e5e771fe121f5b3c92dc9cdbd08d48b6408329e4427b9ec1d11aa55778f"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Repository aggregation walks the git tree and updates per-language byte counts."
+  },
+  {
+   "methods_or_constants": [
+    "BlobHelper#include_in_language_stats?"
+   ],
+   "semantic_operation": "repo.include_in_language_stats",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/blob_helper.rb",
+     "sha256": "0426ee9809f407c0c57509017be053952921f10d6c0035313fced2b3284f6116"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Per-blob inclusion test used by repository aggregation."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Repository#languages",
+    "Repository#compute_stats",
+    "Repository#breakdown_by_file"
+   ],
+   "semantic_operation": "repo.languages_aggregate",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/repository.rb",
+     "sha256": "21070e5e771fe121f5b3c92dc9cdbd08d48b6408329e4427b9ec1d11aa55778f"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Repository aggregation walks the git tree and updates per-language byte counts."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Strategy::Extension.call",
+    "Language.find_by_extension",
+    "Language.extension_index"
+   ],
+   "semantic_operation": "strategy.extension",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/strategy/extension.rb",
+     "sha256": "a8218859033fda8e5cb9ad32e58f6f805e770978715956c1671c382c01352e37"
+    },
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Extension strategy consults the extension index from languages.yml, skipping generic.yml-listed extensions."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Strategy::Extension.call",
+    "Language.find_by_extension",
+    "Language.extension_index"
+   ],
+   "semantic_operation": "strategy.extension.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/strategy/extension.rb",
+     "sha256": "a8218859033fda8e5cb9ad32e58f6f805e770978715956c1671c382c01352e37"
+    },
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Extension strategy consults the extension index from languages.yml, skipping generic.yml-listed extensions."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Strategy::Filename.call",
+    "Language.find_by_filename",
+    "Language.filename_index"
+   ],
+   "semantic_operation": "strategy.filename",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/strategy/filename.rb",
+     "sha256": "e95cb35ebcb6f2926c92bd96569fd8e218d81ea28e156c75baef25c83b68843f"
+    },
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Filename strategy consults the filename index from languages.yml."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Strategy::Filename.call",
+    "Language.find_by_filename",
+    "Language.filename_index"
+   ],
+   "semantic_operation": "strategy.filename.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/strategy/filename.rb",
+     "sha256": "e95cb35ebcb6f2926c92bd96569fd8e218d81ea28e156c75baef25c83b68843f"
+    },
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Filename strategy consults the filename index from languages.yml."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Strategy::Manpage.call",
+    "MANPAGE_EXTS"
+   ],
+   "semantic_operation": "strategy.manpage",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/strategy/manpage.rb",
+     "sha256": "9b806b15776de05361ad3400500390d8c3ea03bc4c0b7a9d14775ea2913f2e5e"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Manpage strategy matches numeric-sectioned extensions (man/mdco etc.)."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Strategy::Manpage.call",
+    "MANPAGE_EXTS"
+   ],
+   "semantic_operation": "strategy.manpage.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/strategy/manpage.rb",
+     "sha256": "9b806b15776de05361ad3400500390d8c3ea03bc4c0b7a9d14775ea2913f2e5e"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Manpage strategy matches numeric-sectioned extensions (man/mdco etc.)."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Strategy::Modeline.call",
+    "Language.find_by_alias",
+    "Language.alias_index"
+   ],
+   "semantic_operation": "strategy.modeline",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/strategy/modeline.rb",
+     "sha256": "5b49db5dcdfa14eae68a4b3569449a9c4b4d698d696ae16c4799c4b09a592f39"
+    },
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Modeline strategy consults the alias index from languages.yml."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Strategy::Modeline.call",
+    "Language.find_by_alias",
+    "Language.alias_index"
+   ],
+   "semantic_operation": "strategy.modeline.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/strategy/modeline.rb",
+     "sha256": "5b49db5dcdfa14eae68a4b3569449a9c4b4d698d696ae16c4799c4b09a592f39"
+    },
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Modeline strategy consults the alias index from languages.yml."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Shebang.call",
+    "Language.find_by_interpreter",
+    "Language.interpreter_index"
+   ],
+   "semantic_operation": "strategy.shebang",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/shebang.rb",
+     "sha256": "344133fd40895e4256ae5e6b1e308c74fe0613e6b6da9991dd38e818b45d4b17"
+    },
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Shebang strategy reads the first line and consults the interpreter index from languages.yml."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Shebang.call",
+    "Language.find_by_interpreter",
+    "Language.interpreter_index"
+   ],
+   "semantic_operation": "strategy.shebang.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/shebang.rb",
+     "sha256": "344133fd40895e4256ae5e6b1e308c74fe0613e6b6da9991dd38e818b45d4b17"
+    },
+    {
+     "relative_path": "lib/linguist/language.rb",
+     "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "Shebang strategy reads the first line and consults the interpreter index from languages.yml."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Strategy::XML.call"
+   ],
+   "semantic_operation": "strategy.xml",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/strategy/xml.rb",
+     "sha256": "e0ad4f67f25bebe08cb16d6585f98d3275e352963f763e76cb1165ca9984a31b"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "XML strategy checks the first two lines for the XML declaration."
+  },
+  {
+   "methods_or_constants": [
+    "Linguist::Strategy::XML.call"
+   ],
+   "semantic_operation": "strategy.xml.result",
+   "upstream_relative_files": [
+    {
+     "relative_path": "lib/linguist/strategy/xml.rb",
+     "sha256": "e0ad4f67f25bebe08cb16d6585f98d3275e352963f763e76cb1165ca9984a31b"
+    }
+   ],
+   "why_this_source_maps_to_the_operation": "XML strategy checks the first two lines for the XML declaration."
+  }
+ ],
+ "schema": "p02-source-map/1"
+}

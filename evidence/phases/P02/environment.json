@@ -1,0 +1,45 @@
+{
+  "phase": "P02",
+  "timestamp": "2026-09-03T00:30:00-06:00",
+  "project": {
+    "head_at_start": "25670cd (P01)",
+    "os": "win32",
+    "python_for_builders": "3.12.4"
+  },
+  "oracle": {
+    "frozen_revision": "b88d632053392ec83fdb00cdc2a39ac3cabb301c",
+    "parent_revision": "d5214e1612c858ba14bf98edeca57e1683276f1d",
+    "branch": "malbolge-patch-canonical",
+    "remote": "https://github.com/github-linguist/linguist.git",
+    "path_word": "malbolge-patch-canonical working tree"
+  },
+  "execution_env": {
+    "container_image": "malbolge-linguist-addgrammar:latest",
+    "ruby": "3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux-musl]",
+    "bundler": "2.6.9",
+    "git": "2.54.0",
+    "docker_client": "29.5.3",
+    "docker_server": "27.5.1"
+  },
+  "modules_installed_by_instrumentation": [
+    "Linguist.singleton_class <- P02::DetectTap",
+    "Linguist::Strategy::Modeline.singleton_class <- P02::ModelineTap",
+    "Linguist::Strategy::Filename.singleton_class <- P02::FilenameTap",
+    "Linguist::Shebang.singleton_class <- P02::ShebangTap",
+    "Linguist::Strategy::Extension.singleton_class <- P02::ExtensionTap",
+    "Linguist::Strategy::XML.singleton_class <- P02::XMLTap",
+    "Linguist::Strategy::Manpage.singleton_class <- P02::ManpageTap",
+    "Linguist::Heuristics.singleton_class <- P02::HeuristicsTap",
+    "Linguist::Classifier.singleton_class <- P02::ClassifierTap",
+    "Linguist::Blob.prepend(P02::BlobFlagTap)",
+    "Linguist::FileBlob.prepend(P02::BlobFlagTap)",
+    "Linguist::LazyBlob.prepend(P02::BlobFlagTap)",
+    "Linguist::Language.singleton_class <-P02::LanguageMetaTap",
+    "Linguist::Repository.prepend(P02::RepoTap)"
+  ],
+  "instrumentation_corners": [
+    "All taps are non-invasive prepended modules that only log; they never mutate return values.",
+    "The extname/name/sloc/loc/flags are computed by the frozen upstream code on the frozen bytes; the tap captures the API's return value as evidence.",
+    "All `.result` records are written AFTER `super` returns; if the toolbox changed behavior the terminal-parity gate or deterministic gates would fail."
+  ]
+}

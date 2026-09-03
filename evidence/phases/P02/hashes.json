@@ -1,0 +1,39 @@
+{
+  "phase": "P02",
+  "artifacts": {
+    "oracle_repo": {
+      "remote": "https://github.com/github-linguist/linguist.git",
+      "working_head": "b88d632053392ec83fdb00cdc2a39ac3cabb301c",
+      "parent": "d5214e1612c858ba14bf98edeca57e1683276f1d",
+      "working_tree_state": "clean"
+    },
+    "harness_scripts": {
+      "scripts/p02_trace_oracle.rb": "6857c25eccfda5bd36ffb9265fb4d1e011e1d11a5e03d72246669cad0d52a29a",
+      "scripts/p02_build_semantic_graph.py": "49c9b9d161d84732385dc7ca547938ca3046fdf7c252f5f25c5b897da6d425a5",
+      "scripts/p02_verify_semantic_graph.py": "d050d5f750c2859e4e36a6851bbbd0cafee0a7e01060d6a49c75137b687a8f03"
+    },
+    "traces": {
+      "run1.normalized.json": "2c5f16e5a967977462ebd5aa18172529a0372a5ac3b6d2026d6a5d8d34046fe6",
+      "run2.normalized.json": "2c5f16e5a967977462ebd5aa18172529a0372a5ac3b6d2026d6a5d8d34046fe6",
+      "run1.terminal_parity.json": "7a36061c6298c700d9002692ba4179adf33d5424de8e7ebe5ee246f6e93a17d2",
+      "run2.terminal_parity.json": "7a36061c6298c700d9002692ba4179adf33d5424de8e7ebe5ee246f6e93a17d2",
+      "run1.raw.json": "2c5f16e5a967977462ebd5aa18172529a0372a5ac3b6d2026d6a5d8d34046fe6",
+      "run2.raw.json": "2c5f16e5a967977462ebd5aa18172529a0372a5ac3b6d2026d6a5d8d34046fe6",
+      "traces_match": true,
+      "parity_match": true
+    },
+    "semantics": {
+      "semantic_graph.json": "a03c6f981ea377ec5b440c95dca6ef1a124c6e488e96a2222a23adb1630044b1",
+      "semantic_graph_from_run2.json": "a03c6f981ea377ec5b440c95dca6ef1a124c6e488e96a2222a23adb1630044b1",
+      "graphs_match": true,
+      "source_map.json": "9b9dc007d76d0df8f93d3ea1b6d5a43419948e6cac6d00b54f0c9423c44db186",
+      "data_dependencies.json": "c5ac33be0fc45d390d8725ed448afc361050a990da1496a73efb1a83fe5234e0",
+      "coverage.json": "27b2fab404e48f1dda5d5fb467342924841c848376bc19056a785310ce2720df"
+    }
+  },
+  "determinism_proved": {
+    "traces_identical": true,
+    "graphs_identical": true,
+    "parity_identical": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+ "rows": [
+  {
+   "name": "lib/linguist/languages.yml",
+   "role": "language metadata (names/extensions/filenames/aliases/interpreters)",
+   "sha256": "1b4dc61a7b1a706f4c0102032fd9921e13132d58d4f19f456606fbc601c17eed"
+  },
+  {
+   "name": "lib/linguist/heuristics.yml",
+   "role": "content heuristics disambiguation rules",
+   "sha256": "3a0117d0af3de0df1305416d4051c322ab63e4a616a08a427a4d7bb9562f9d7e"
+  },
+  {
+   "name": "lib/linguist/vendor.yml",
+   "role": "vendored path patterns",
+   "sha256": "c2be3ef634345e47a2b4001703313bf2e5c2453083ca6f41cf7fd5c727440690"
+  },
+  {
+   "name": "lib/linguist/documentation.yml",
+   "role": "documentation path patterns",
+   "sha256": "6406cdc2013f7f3e04122e064020c56be5322d035762d46dbb6e0bca516238e9"
+  },
+  {
+   "name": "lib/linguist/generic.yml",
+   "role": "generic extensions (skipped by extension strategy)",
+   "sha256": "2c0050f8fb8e712b2615501df0fff07ecbf16a0fb6dc73cd6e012d9644f61f65"
+  },
+  {
+   "name": "lib/linguist/generated.rb",
+   "role": "generated-content rules",
+   "sha256": "10fd36be2dae4daa089ad623a1cbf505235ba535a419dcd8ee31f63dad5511df"
+  },
+  {
+   "name": "lib/linguist/samples_data.rb",
+   "role": "trained classifier samples matrix",
+   "sha256": "00bad52a394c23345eff38ac7625fc909f69c57d2f3af2bb840e6b04453e7788"
+  },
+  {
+   "name": "lib/linguist/language.rb",
+   "role": "language index construction + lookup surface",
+   "sha256": "1c40c0d06518abe595a9af29fb7f93cf80394c81d0b9d9079b1824848ac1c8b6"
+  },
+  {
+   "name": "lib/linguist.rb",
+   "role": "top-level detection entry and STRATEGIES",
+   "sha256": "9dd197f3c490878866c568afc8792d427943dbf28df9def6c4ff7b9ddc56f37e"
+  }
+ ],
+ "schema": "p02-data-dependencies/1"
+}
