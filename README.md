@@ -1,6 +1,11 @@
-# BOLGANG VS LINGUISTIC — Roadmap
+# Bolgang vs Linguistic v2.0 — Malbolge Linguist Observer & Execution Harness
+
+[![Version](https://img.shields.io/badge/version-2.0-blue.svg)](https://github.com/DannyBaanks/bolgang-vs-linguistic)
+[![Classic](https://img.shields.io/badge/target-Classic%2059049-orange.svg)]()
 
 > A passive-aggressive experiment in making GitHub Linguist's observable behavior run through ordinary Classic Malbolge.
+
+Part of the **v2.0 Malbolge Experimental and Linguistic Research Fleet**.
 
 No upstream inclusion is requested.
 
